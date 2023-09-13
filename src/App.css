@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  --text-color: rgb(155, 155, 155);
+  font-family: 'Inter', sans-serif;
+  --logo-font: 'Darumadrop One', cursive;
+  --text-font: 'Inter', sans-serif;
+}
+
+.logo {
+  /* font-family: var(--logo-font); */
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+
+}
+ 
+/*
+  Home css
+*/
+
+.home-red-obj {
+  background-color: rgba(210, 26, 26, 0.3);
+  position: absolute;
+  height: 400px;
+  width: 400px;
+  left: 10%;
+  z-index: -1;
+  border-radius: 500px;
+  /* offset-x | offset-y | blur-radius | spread-radius | color */
+  box-shadow: 0px 0px 30px 30px rgba(210, 26, 26, 0.3);
+}
+
+.home-purple-obj {
+  background-color: rgba(111, 21, 163, 0.4);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  transform: rotate(75deg);
+  top: 15%;
+  left: 53%;
+  z-index: -1;
+  box-shadow: 0 0 30px 30px rgba(111, 21, 163, 0.4);
+}
+
+.home-green-obj {
+  background-color: rgba(23, 176, 23, 0.20);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  z-index: -1;
+  top: 65%;
+  left: 50%;
+  transform: rotate(20deg);
+  box-shadow: 0 0 30px 30px rgba(23, 176, 23, 0.20);
+}
+ 
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home-links {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 0;
+}
+
+.home-link {
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  padding: 5px 0;
+}
+
+.home-menu a {
+  padding: 0 0.5rem;
+}
+
+/*
+  Login CSS
+*/
+
+.login-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-inputs {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+
+.login-container label {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid black;
+  width: 300px;
+  margin: 2rem 0;
+}
+
+.login-inputs input{
+  border: none;
+  width: 100%;
+  padding-left: 5px;
+  background-color: transparent;
+}
+
+.login-container button {
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 10px 3rem;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 10px 0;
+  box-shadow: 0 3px 4px 0 rgba(73, 73, 73, 0.67);
+}
+
+#join-btn {
+  background-color: rgba(14, 14, 201, 0.759);
+  color: white;
+  box-shadow: 0 3px 4px 0 rgba(14, 14, 201, 0.759);
+}
+
+.login-forgot{
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+.login-forgot a  {
+  text-decoration: none;
+  color: black;
+  padding: 2px 0;
+  font-size: 12px;
+}
+
+/*
+  Navbar CSS
+*/
+ .navbar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+ }
+
+ .greybox {
+  position: absolute;
+  top: 0;
+  height: 98px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.42);
+ }
+
+.navbar-logo {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+  padding: 1rem 0;
+}
+
+.navbar-links {
+  margin: 0.5rem 0;
+}
+
+.navbar-link {
+  margin: 0 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+.navbar-menu {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-menu-link {
+  font-size: smaller;
+  padding: 0 5px;
+  text-decoration: none;
+  color: black;
+}
+
